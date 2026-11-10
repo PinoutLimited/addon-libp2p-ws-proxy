@@ -6,7 +6,7 @@ RUN apk add --no-cache \
     git
 
 WORKDIR /proxy
-RUN git clone https://github.com/PinoutLTD/libp2p-ws-proxy
+RUN git clone https://github.com/PinoutLimited/libp2p-ws-proxy
 COPY run.sh libp2p-ws-proxy
 WORKDIR /proxy/libp2p-ws-proxy
 RUN npm ci --only=production
